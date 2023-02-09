@@ -3,7 +3,6 @@ pipeline{
    agent {
       label 'ansible'
    }
-
      stages {
 
         stage('Hello') {
