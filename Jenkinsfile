@@ -9,14 +9,14 @@ pipeline{
            echo 'how are you'
         }
       }
-   }
 
-       stage('Hello') {
+
+       stage ('Hello') {
         steps{
          echo 'Hello WORLD'
       }
     }
-
+}
 
    post {
       always{
