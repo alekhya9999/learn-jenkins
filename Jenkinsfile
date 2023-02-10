@@ -3,7 +3,7 @@ pipeline{
    agent {
       label 'ansible'
    }
-         stages {
+    stages {
           stage('Build') {
             steps {
            echo 'how are you'
