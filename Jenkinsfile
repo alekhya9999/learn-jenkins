@@ -9,11 +9,20 @@ pipeline{
            echo 'how are you'
         }
       }
-        stage ('Hello') {
+        stage ('Test') {
           steps{
           echo 'Hello WORLD'
       }
     }
+         stage ('Integration') {
+           steps{
+           echo 'Hello universe'
+          }
+        }
+
+
+
+
 }
 
    post {
