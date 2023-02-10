@@ -11,7 +11,7 @@ pipeline{
       }
     }
    }
-   stages {
+        stages {
 
            stage('Hello1') {
            steps{
@@ -19,7 +19,7 @@ pipeline{
          }
        }
       }
-      stages {
+          stages {
 
               stage('Hello2') {
               steps{
