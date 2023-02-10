@@ -4,8 +4,8 @@ pipeline{
       label 'ansible'
    }
       stages {
-              stage('Build') {
-                  steps {
+          stage('Build') {
+               steps {
                       echo 'how are you'
                   }
               }
