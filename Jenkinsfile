@@ -1,3 +1,10 @@
+@library('roboshop') _
+ env.abc="somedata"
+ test1.new1()
+
+
+
+
 // pipeline{
 //
 //    agent {
@@ -23,41 +30,37 @@
 //
 //    post {
 //       always{
-//          echo "sendingmail"
+//          echo "sending mail"
 //    }   }
 // }
 //
 //
 
-@Library('roboshop') _
- pipeline{
-  agent any
-   stages{
-     stage('test'){
-       steps{
-         script {
-            env.abc = "Hello"
-            def xyz = 10
-
-            print "abc = ${abc}"
-            print "xyz = ${xyz}"
-            print abc
-        }
-         script {
-           print "abc = ${abc}"
-         }
-       }
-     }
-       stage('test2'){
-          steps{
-            script{
-              print "abc = ${abc}"
-            }
-          }
-
-       }
-
-
-   }
-
- }
+//  @Library('roboshop') _
+//   pipeline{
+//   agent any
+//    stages{
+//      stage('test'){
+//        steps{
+//          script {
+//             env.abc = "Hello"
+//             def xyz = 10
+//
+//             print "abc = ${abc}"
+//             print "xyz = ${xyz}"
+//             print abc
+//         }
+//          script {
+//            print "abc = ${abc}"
+//          }
+//        }
+//      }
+//        stage('test2'){
+//           steps{
+//             script{
+//               print "abc = ${abc}"
+//             }
+//            }
+//        }
+//  }
+//  }
